@@ -1,12 +1,14 @@
 body {
-  font-family: "Pokemon Solid", sans-serif;
   text-align: center;
+  background-color: #353535;
   background-image: url("images/pokeball.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 h1 {
+  padding-top: 10rem;
+  font-family: "Pokemon Solid", sans-serif;
   font-size: 3rem;
   color: #dce05a;
   text-shadow: 4px 4px #0016a1, -4px -4px #32018d;
