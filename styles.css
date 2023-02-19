@@ -1,0 +1,124 @@
+body {
+  font-family: "Pokemon Solid", sans-serif;
+  text-align: center;
+  background-image: url("images/pokeball.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 3rem;
+  color: #dce05a;
+  text-shadow: 4px 4px #0016a1, -4px -4px #32018d;
+}
+
+.pokemonTitle{
+  width: 4rem;
+  height: auto;
+}
+
+footer {
+  color: #f3e3e3;
+  font-family: sans-serif;
+}
+
+.A {
+  background-image: url("images/Pikachu.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.S {
+  background-image: url("images/charmander.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.D {
+  background-image: url("images/eevee.png");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.F {
+  background-image: url("images/bulbasaur.png");
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.G {
+  background-image: url("images/squirtle.png");
+  background-size: 90%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.H {
+  background-image: url("images/Jigglypuff.png");
+  background-size: 110%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.set {
+  margin: 10% auto;
+}
+
+.game-over {
+  background-color: red;
+  opacity: 0.8;
+}
+
+.pressed{
+  background-image: url("images/pokeballCatch.png");
+  background-size: 120%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.drum {
+  outline: none;
+  font-size: 3rem;
+  text-shadow: 1px 1px #fcfcfc, -1px -1px #fcfcfc;
+  line-height: 2;
+  display: inline-block;
+  --borderWidth: 15px;
+  position: relative;
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 15px;
+  background-color: rgba(255, 255, 255, 0.656);
+}
+
+.drum:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #ffffff, #ffffff, #ffffff, #000000, #fa4040, #ff5b5b, #ffc0c0);
+  border-radius: 100px;
+  z-index: -1;
+  animation: animatedgradient 2s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
